@@ -97,8 +97,7 @@ st.markdown("""
 @st.cache_data
 def load_data():
     try:
-        df = pd.read_csv("india_economic_data.csv")
-
+      df = pd.read_csv("india_economic_dashboard/india_economic_data.csv")
         # ✅ Clean column names (important)
         df.columns = df.columns.str.strip()
 
